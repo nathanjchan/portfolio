@@ -6,7 +6,7 @@
         window.location.href = "https://www.loom.com/share/272a6fc803574061a0fe42a73b24b93b?sid=d70f09fa-94ae-4c94-b306-1a412f0b1e73";
     }
     function handleDominoClick() {
-        window.location.href = "/domino";
+        window.location.href = "https://photos.app.goo.gl/WTEvoJ6oGsdmn1o88";
     }
     function handleNextnavClick() {
         window.location.href = "https://nextnav.com";
