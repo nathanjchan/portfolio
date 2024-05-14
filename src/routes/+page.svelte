@@ -3,7 +3,7 @@
         window.location.href = "/about";
     }
     function handleRemyntClick() {
-        window.location.href = "https://getremynted.com";
+        window.location.href = "https://www.loom.com/share/272a6fc803574061a0fe42a73b24b93b?sid=d70f09fa-94ae-4c94-b306-1a412f0b1e73";
     }
     function handleDominoClick() {
         window.location.href = "/domino";
@@ -30,7 +30,10 @@
             <p>Portfolio</p>
         </section>
         <section style="animation-delay: 0.1s;">
-            <remynt-cropped
+            <img
+                class="remynt-cropped"
+                src="remynt-logo.png"
+                alt="Remynt logo"
                 on:click={handleRemyntClick}
                 on:keydown={() => {}}
             />
@@ -43,7 +46,6 @@
                 class="domino-cropped"
                 src="domino-sign-in.png"
                 alt="Domino sign in"
-
                 on:click={handleDominoClick}
                 on:keydown={() => {}}
             />
@@ -117,7 +119,7 @@
             transform: translateY(0);
         }
     }
-    remynt-cropped {
+    .remynt-cropped {
         width: 166px;
         height: 56px;
         background-image: url("remynt-logo.png");
@@ -126,7 +128,7 @@
         margin-top: 0px;
         transition: transform 0.4s ease;
     }
-    remynt-cropped:hover {
+    .remynt-cropped:hover {
         transform: scale(1.05);
         cursor: pointer;
     }
