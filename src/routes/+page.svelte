@@ -68,7 +68,10 @@
     </section2x2>
     <vdiv>
         <section style="animation-delay: 0.4s;">
-            <nextnav-logo
+            <img
+                class="nextnav-logo"
+                src="nextnav-logo.jpeg"
+                alt="Nextnav logo"
                 on:click={handleNextnavClick}
                 on:keydown={() => {}}
             />
@@ -122,7 +125,6 @@
     .remynt-cropped {
         width: 166px;
         height: 56px;
-        background-image: url("remynt-logo.png");
         margin: auto;
         margin-bottom: 8px;
         margin-top: 0px;
@@ -152,16 +154,15 @@
         transform: scale(1.05);
         cursor: pointer;
     }
-    nextnav-logo {
+    .nextnav-logo {
         width: 240px;
         height: 80px;
-        background-image: url("nextnav-logo.jpeg");
-        background-position: 0 -22px;
-        background-size: cover;
+        object-fit: cover;
+        object-position: 0 -22px;
         transition: transform 0.4s ease;
         margin-bottom: 8px;
     }
-    nextnav-logo:hover {
+    .nextnav-logo:hover {
         transform: scale(1.05);
         cursor: pointer;
     }
