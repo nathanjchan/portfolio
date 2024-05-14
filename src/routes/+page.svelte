@@ -43,6 +43,20 @@
     <section2x2 style="animation-delay: 0.2s;">
         <vdiv>
             <img
+                class="bloomlabs-logo"
+                src="bloomlabs-logo.webp"
+                alt="Bloom Labs"
+                on:click={handleDominoClick}
+                on:keydown={() => {}}
+            />
+            <p>
+                AI companion chatbot with emotional intelligence and customizable personality.
+            </p>
+        </vdiv>
+    </section2x2>
+    <section2x2 style="animation-delay: 0.3s;">
+        <vdiv>
+            <img
                 class="domino-cropped"
                 src="domino-sign-in.png"
                 alt="Domino sign in"
@@ -50,19 +64,7 @@
                 on:keydown={() => {}}
             />
             <p>
-                Built a video-based social media iOS app with video-sharing
-                features and video editing tools.
-            </p>
-        </vdiv>
-    </section2x2>
-    <section2x2 style="animation-delay: 0.3s;">
-        <vdiv>
-            <!-- <domino-cropped
-                on:click={handleDominoClick}
-                on:keydown={() => {}}
-            /> TODO: replace with Lamar Health screenshot. -->
-            <p>
-                Built a health-tracking app in React Native.
+                iOS social media app with video-sharing features and video editing tools.
             </p>
         </vdiv>
     </section2x2>
@@ -144,6 +146,15 @@
     }
     .domino-cropped:hover {
         transform: scale(1.03);
+        cursor: pointer;
+    }
+    .bloomlabs-logo {
+        width: 300px;
+        transition: transform 0.4s ease;
+        margin-bottom: 21px;
+    }
+    .bloomlabs-logo:hover {
+        transform: scale(1.05);
         cursor: pointer;
     }
     .cmb-logo {
