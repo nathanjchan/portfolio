@@ -1,9 +1,12 @@
 <script>
     function handleNameClick() {
-        window.location.href = "/about";
+        window.location.href = "https://www.linkedin.com/in/nathanjchan/";
     }
     function handleRemyntClick() {
         window.location.href = "https://www.loom.com/share/272a6fc803574061a0fe42a73b24b93b?sid=d70f09fa-94ae-4c94-b306-1a412f0b1e73";
+    }
+    function handleBloomlabsClick() {
+        window.location.href = "https://bloomlabs.ai";
     }
     function handleDominoClick() {
         window.location.href = "https://photos.app.goo.gl/WTEvoJ6oGsdmn1o88";
@@ -11,8 +14,8 @@
     function handleNextnavClick() {
         window.location.href = "https://nextnav.com";
     }
-    function handleCmbClick() {
-        window.location.href = "https://mindbrain.ucdavis.edu/";
+    function handleLamarhealthClick() {
+        window.location.href = "https://photos.app.goo.gl/N963ciwMYPbFVw926";
     }
 </script>
 
@@ -46,7 +49,7 @@
                 class="bloomlabs-logo"
                 src="bloomlabs-logo.webp"
                 alt="Bloom Labs"
-                on:click={handleDominoClick}
+                on:click={handleBloomlabsClick}
                 on:keydown={() => {}}
             />
             <p>
@@ -81,13 +84,13 @@
         </section>
         <section style="animation-delay: 0.5s;">
             <img
-                class="cmb-logo"
-                src="cmb-logo.png"
-                alt="CMB logo"
-                on:click={handleCmbClick}
+                class="lamarhealth-logo"
+                src="lamarhealth-logo.png"
+                alt="LamarHealth logo"
+                on:click={handleLamarhealthClick}
                 on:keydown={() => {}}
             />
-            <p>Research Assistant</p>
+            <p>Software Consultant</p>
         </section>
     </vdiv>
 </container>
@@ -154,6 +157,15 @@
         margin-bottom: 21px;
     }
     .bloomlabs-logo:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .lamarhealth-logo {
+        width: 240px;
+        margin-bottom: 16px;
+        transition: transform 0.4s ease;
+    }
+    .lamarhealth-logo:hover {
         transform: scale(1.05);
         cursor: pointer;
     }
