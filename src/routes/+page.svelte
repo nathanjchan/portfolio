@@ -39,7 +39,11 @@
     </vdiv>
     <section2x2 style="animation-delay: 0.2s;">
         <vdiv>
-            <domino-cropped
+            <img
+                class="domino-cropped"
+                src="domino-sign-in.png"
+                alt="Domino sign in"
+
                 on:click={handleDominoClick}
                 on:keydown={() => {}}
             />
@@ -126,16 +130,15 @@
         transform: scale(1.05);
         cursor: pointer;
     }
-    domino-cropped {
+    .domino-cropped {
         width: 300px;
         height: 300px;
-        background-image: url("domino-sign-in.png");
-        background-position: 0 -75px;
-        background-size: cover;
+        object-fit: cover;
+        object-position: 0 -75px;
         margin-bottom: 16px;
         transition: transform 0.4s ease;
     }
-    domino-cropped:hover {
+    .domino-cropped:hover {
         transform: scale(1.03);
         cursor: pointer;
     }
