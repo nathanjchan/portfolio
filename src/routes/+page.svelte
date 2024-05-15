@@ -154,7 +154,7 @@
     .bloomlabs-logo {
         width: 300px;
         transition: transform 0.4s ease;
-        margin-bottom: 21px;
+        margin-bottom: 20px;
     }
     .bloomlabs-logo:hover {
         transform: scale(1.05);
